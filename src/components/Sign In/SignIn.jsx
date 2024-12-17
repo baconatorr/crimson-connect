@@ -2,14 +2,12 @@ import { useState } from "react";
 import Logo from "../../../public/ram-logo.png";
 import { verifyEmail, signUp, logIn, logError } from "../../backend/auth";
 import ErrorMessage from "./ErrorMessage";
-import { useAuth } from "../../backend/authContext";
 import { useNavigate } from "react-router-dom";
 
 import styles from "./SignIn.module.css";
 
 export default function SignIn() {
   const navigate = useNavigate();
-  const { logIn: setUserLoggedIn, setNotification } = useAuth();
   const [errorMessage, setErrorMessage] = useState("");
   const [errorDisplay, setErrorDisplay] = useState("");
   const [email, setEmail] = useState("");

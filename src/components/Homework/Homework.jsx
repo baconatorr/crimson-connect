@@ -1,16 +1,9 @@
 // Homework.js
 import styles from "./Homework.module.css";
-import { useAuth } from "../../backend/authContext"; // Import useAuth
 import TabButton from "./TabButton";
 import LoggedIn from "./LoggedIn";
 
 export default function Homework() {
-  const { isLoggedIn, notification } = useAuth(); // Access notification and isLoggedIn from context
-
-  if (!isLoggedIn) {
-    return <Navigate to="/" replace />;
-  }  
-
   return (
     <div className={styles.container}>
       {isLoggedIn && notification && <LoggedIn />} {/* Display notification */}
