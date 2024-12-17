@@ -1,0 +1,119 @@
+.container {
+    font-family: 'Inter';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-image: url(manualbg.png);
+    background-repeat: no-repeat; /* Prevent repeating the background image */
+    background-size: cover; /* Scale the image to fit within the container while preserving its aspect ratio */
+    background-position: center; /* Optionally center the image */
+  }
+
+  .sub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo{
+    width: 200px;
+    height: 150px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .h1{
+    padding: 0;
+    margin: 10px;
+    color: white;
+    font-size: 100px;
+    text-shadow:
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000;
+    text-align: center;
+  }
+  
+  .email {
+    display: flex;
+    background-color: #171717;
+    width: 500px;
+    padding: 0px 20px;
+    border-radius: 20px;
+  }
+  
+  .email input,
+  .emailRight {
+    box-sizing: border-box; /* Include padding and border in width */
+  }
+  
+  .email input {
+    flex: 1; /* Take up equal space */
+    padding-right: 15px;
+    border: none;
+    background-color: #171717;
+    color: #757575;
+    font-family: 'Inter';
+    font-weight: 600;
+    border-right: 1px solid #2D2D2D;
+
+    margin-right: 0px;
+    font-size: 15px;
+  }
+  
+  .email input:focus {
+    outline: none;
+  }
+  
+  .emailRight {
+    flex: 1; /* Take up equal space */
+    display: flex;
+    align-items: center; /* Center the email domain text */
+    padding: 10px;
+    border-left: 1px solid #2D2D2D;
+  }
+  
+  .emailDomain {
+    margin: 0;
+    color: #757575;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  .password{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #171717;
+    width: 300px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+  }
+
+  .password input{
+    border: none;
+    background-color: #171717;
+    color: #757575;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .password input:focus {
+    outline: none;
+  }
+
+  .password i{
+    color: #757575;
+    font-size: 20px;
+  }
+
+
