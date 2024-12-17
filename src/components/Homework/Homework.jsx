@@ -7,6 +7,10 @@ import LoggedIn from "./LoggedIn";
 export default function Homework() {
   const { isLoggedIn, notification } = useAuth(); // Access notification and isLoggedIn from context
 
+  if (!isLoggedIn) {
+    return <Navigate to="/" replace />;
+  }  
+
   return (
     <div className={styles.container}>
       {isLoggedIn && notification && <LoggedIn />} {/* Display notification */}
